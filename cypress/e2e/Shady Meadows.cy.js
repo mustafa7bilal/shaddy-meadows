@@ -11,5 +11,7 @@ describe('Shady Meadows', () => {
     cy.get('.navbar-brand > span').should('be.visible').contains('Meadows');
     cy.get(':nth-child(1) > .nav-link').contains('Rooms').should('be.visible').click();
     cy.get('#rooms .row.g-4').children().should('be.visible', 'have.length',3);
+    cy.get('#rooms > .container > .row > :nth-child(1)').contains('Single')
+    cy.get('a.btn.btn-primary').eq(1).click();
   });
 });
