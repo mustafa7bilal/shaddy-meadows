@@ -52,7 +52,7 @@ describe('Shady Meadows', () => {
 
 cy.get('.d-grid > .btn').contains('Submit').click();
 cy.get('.col-lg-8 > .card > .card-body').should('be.visible').contains('Thanks for getting in touch Mustafa Bilal!');
-
+cy.wait(5000);
 
 
 
