@@ -10,7 +10,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 describe('Admin',()=>{
 it('Ad room from admin and then book',()=>{
-cy.visit('https://automationintesting.online/');
+cy.visitHomePage();
 cy.get(':nth-child(6) > .nav-link').contains('Admin').click();
 cy.get('.col-sm-8').should('be.visible');
 cy.get('#username').type('admin');
