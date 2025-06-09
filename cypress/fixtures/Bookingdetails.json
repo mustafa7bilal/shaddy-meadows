@@ -3,5 +3,16 @@
   "lastName": "Bilal",
   "email": "mustafa7bilal@gmail.com",
   "phone": "+923094276016",
-  "subject":"Automation Testing Practice"
+  "subject":"Automation Testing Practice",
+  
+  "name": "104",
+  "type": "Family",
+  "accessible": true,
+  "price": "200",
+  "wifi": true,
+  "tv": true,
+  "views": true,
+  "description": "This is for a family of 6 persons with 3 bedrooms",
+  "imageUrl": "https://images.pexels.com/photos/2282848/pexels-photo-2282848.jpeg"
+
 }

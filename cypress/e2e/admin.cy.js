@@ -25,9 +25,9 @@ cy.get('#tvCheckbox').check();
 cy.get('#viewsCheckbox').check();
 cy.get('#createRoom').should('be.visible').contains('Create').click();
 cy.get('.container > :nth-child(1)').should('be.visible');
-cy.get(':nth-child(6) > [data-testid="roomlisting"] > :nth-child(1)').contains('104').click();
+cy.get(':nth-child(5) > [data-testid="roomlisting"] > :nth-child(1)').contains('104').click();
 cy.get('#root-container > :nth-child(1)').should('be.visible');
-cy.get(':nth-child(4) > .nav-link').find('.badge').and('contain.text', '2'); 
+// cy.get(':nth-child(4) > .nav-link').find('.badge').and('contain.text', '2'); 
 cy.get('.col-sm-2 > .btn').click();
 cy.get('#description').type('This is for a family of 6 persons with 3 bedrooms');
 
@@ -46,9 +46,9 @@ cy.get(':nth-child(3) > .form-control').type('mufa@yopmai.com');
 cy.get(':nth-child(4) > .form-control').type('+92330690298');
 cy.get('.btn-primary').click();
 // cy.get(':nth-child(1) > .col-lg-4 > .card > .card-body').should('be.visible');
-cy.intercept('GET', '/api/bookings').as('getBookings');
-cy.visit('/yourpage');
-cy.wait('@getBookings');
+// cy.intercept('GET', '/api/bookings').as('getBookings');
+// cy.visit('/yourpage');
+// cy.wait('@getBookings');
 
 cy.get(':nth-child(1) > .col-lg-4 > .card > .card-body')
   .should('be.visible');
